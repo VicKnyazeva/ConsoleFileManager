@@ -36,6 +36,7 @@ This app allows:
 ###  ls, list        - lists all files and folders
 
 - ls                  - *views disks list*
+- ls .                - *reloads file list*
 - ls -p &lt;N&gt;             - *views page &lt;N&gt;*
 - ls &lt;directory&gt;      - *show files and folders in folder &lt;directory&gt;*
 - ls &lt;directory&gt; -p &lt;N&gt; - *same as above and view page &lt;N&gt;*
@@ -48,7 +49,7 @@ This app allows:
 ###  ren, rename     - changes name of file or folder
 
 - ren &lt;new_name&gt;                  - *renames selected file or folder*
-- ren &lt;original_name&gt; &lt;new_name&gt;  - *renames original file/folder to new one. Full path required.*
+- ren &lt;original_name&gt; &lt;new_name&gt;  - *renames original file/folder to new one.*
 
 
 ### cp, copy        - copies file or folder
@@ -58,8 +59,9 @@ This app allows:
 
 ### mv, move        - moves file or folder
 
-- mv &lt;source&gt; &lt;target&gt; - *move file/folder to folder &lt;target&gt;*
+- mv &lt;target&gt;          - *moves selected file to folder &lt;target&gt;*
+- mv &lt;source&gt; &lt;target&gt; - *moves file/folder to folder &lt;target&gt;*
 
 ### del, delete     - deletes file or folder
 
-- del &lt;path&gt; - *delete file/folder. Full path required.*
+- del &lt;path&gt; - *delete file/folder.*

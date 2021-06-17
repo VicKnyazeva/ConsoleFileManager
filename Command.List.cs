@@ -42,6 +42,8 @@ namespace ConsoleFileManager
             }
 
             source = argsCopy.FirstOrDefault()?.Trim();
+            if (source != null)
+                source = Path.GetFullPath(source);
 
             if (pageNumber > FileList.PageCount)
                 pageNumber = FileList.PageCount;

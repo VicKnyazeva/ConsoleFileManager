@@ -126,7 +126,7 @@ namespace ConsoleFileManager
                 // запоминаем путь указанной директории
                 _CurrentDirectory = path;
 
-                Directory.SetCurrentDirectory(path);
+                Directory.SetCurrentDirectory(path ?? "/");
 
                 // запоминаем новый список
                 list = newList;
@@ -324,7 +324,7 @@ namespace ConsoleFileManager
 
             Utils.DrawLine(fullWidth, Utils.ch3, Utils.ch4);
             Console.WriteLine();
-            Utils.DrawLine(fullWidth, $"Page {PageNumber} / {PageCount}, Total items: {list.Count}");
+            Utils.DrawLine(fullWidth, $"Page {PageNumber} / {PageCount}, Total items: {list.Count}, {_CurrentDirectory ?? "DRIVES" }");
 
             // отрисовываем среднюю часть рамки
             Utils.DrawLine(fullWidth, '╞', '═', '╡');

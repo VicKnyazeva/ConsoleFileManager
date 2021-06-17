@@ -18,6 +18,10 @@ namespace ConsoleFileManager
                 return "params expected";
 
             string path = Path.GetFullPath(args[1]);
+            if (!Utils.Confirm($"Are you sure to create '{path}'?"))
+            {
+                return null;
+            }
 
             string message = null;
             try
