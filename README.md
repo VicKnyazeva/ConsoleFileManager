@@ -1,6 +1,6 @@
 # ConsoleFileManager
 
-![](app_example.png)
+![](app_example.jpg)
 
 This app allows: 
 1. Browse the file structure page by page with a depth of no more than 2.  
