@@ -9,7 +9,7 @@ This app allows:
 4. Change the location of files/directories.
 5. Delete files/directories.
 6. Set page size (paging).
-7. Make selection in the file structure by specifying the line number.
+7. Make selection in the file structure by specifying the line number or file/folder name and view information about it.
 6. Save/restore last app state before user exited: 
     - current directory,
     - selected item,
@@ -17,6 +17,8 @@ This app allows:
 
 
 ## Available commands
+
+*Remark:* If the file name contains spaces, you must surround it with quotes: "item_full_path".
 
 ###  h, help         - shows help text
 

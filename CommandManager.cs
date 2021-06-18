@@ -174,6 +174,7 @@ namespace ConsoleFileManager
             RegisterCommand(new HelpCommand());
 
             // остальные команды приложения
+            RegisterCommand(new ReloadCommand());
             RegisterCommand(new SelectCommand());
             RegisterCommand(new PageCommand());
             RegisterCommand(new ListCommand());
